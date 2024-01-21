@@ -5,7 +5,8 @@ body {
 /* Navigation Bar */
 
 #home {
-  background-color: rgba(139, 69, 19);
+  /* background-color: rgba(139, 69, 19); */
+  background-color: crimson;
   padding-bottom: 1cm;
   margin-left:-1cm;
   margin-right:-1cm;
