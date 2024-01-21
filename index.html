@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMK - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Almoustapha Kadi Attou
+
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          attoumkadi@gmail.com
+
+        </div>
+        <div style="clear:both;"></div>
+
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +212 710855175
+
+        </div>
+        <!--
+        <div class="contact_info">
+          <img src="html_finalprojimages/linkedin.png" alt="Lien linkedin"/>
+          <a href="www.linkedin.com/in/attou-almoustapha-kadi-440b1724a" target="_blank"> Visit my LinkedIn profile </a>
+
+        </div>
+        -->
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projetcs</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="html_finalprojimages/amk.jpg" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Attou ! 👋 
+          </h1>
+          <p>
+            As a front-end developer, I have gathered 4 months of experience, 
+            with one month specifically dedicated to working with WordPress.
+            My brief yet intense experience showcases my ability to adapt 
+            quickly and learn new technologies. I am passionate about crafting 
+            engaging user interfaces and consistently strive to refine my skills 
+            to make meaningful contributions to future projects.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>
+        Skills
+      </h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p> 4 months experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/CSS3.png"/>
+          <h6>CSS</h6>
+          <p> 4 months experience</p>
+        </div> 
+        
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p> 4 months experience</p>
+        </div> 
+
+        <div class="skill">
+          <img src="html_finalprojimages/react.png"/>
+          <h6>React JS</h6>
+          <p>1 month experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/wordpress.png"/>
+          <h6>WordPress</h6>
+          <p>1 month experience</p>
+        </div>
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>MOOC Website</h3>
+            <ul>
+              <li>
+                Creating a Massive Open Online Course for a national agency, enabling learners to access high-quality educational ressources remotely, 
+                <span class="project-process">in process...</span> 
+              </li>
+            </ul>
+          </div>
+          <hr>
+  
+          <div class="project-card">
+            <h3>Wedding Trousseau Decorator Website</h3>
+            <ul type="square">
+              <li>
+                Creating a simple website for a bridal trousseau decorator, <span class="project-process">in process...</span>
+              </li>
+            </ul>
+          </div>
+          <hr>
+
+          <div class="project-card">
+            <h3>University end-of-year project</h3>
+            <ul>
+              <li> 
+                Will start soon !
+              </li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>
+        Recommendations
+      </h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Attou is a very quick learner and quickly grasps key concepts of Web development. 
+          He got a great attitude & He is an excellent team player. 
+          He has a curious mind and asks the right question. 
+          He takes initiative within a team and has potentials to lead the team.
+          Your Brother.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Attou has been an awesome experience. 
+          He is highly knowledgable and always goes the extra step to make sure everything is right. 
+          For any future projects that need him expertise I would definitely want to work with him again.
+          Your Friend.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          God bless you 🙏. Your Dad.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" width="63px">
+          <path  stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>
+        Thanks for leaving a recommendation!
+      </h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
