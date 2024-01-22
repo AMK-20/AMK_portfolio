@@ -5,8 +5,7 @@ body {
 /* Navigation Bar */
 
 #home {
-  /* background-color: rgba(139, 69, 19); */
-  background-color: crimson;
+  background-color: rgba(139, 69, 19);
   padding-bottom: 1cm;
   margin-left:-1cm;
   margin-right:-1cm;
@@ -20,7 +19,7 @@ body {
   color: lightgray;
   margin: 10px;
   padding: 20px;
-  font-size: 20px;
+  font-size: 18px;
   text-decoration:none;
 }
 
@@ -87,6 +86,12 @@ h2 {
   display: flex;
 }
 
+/* Used in the About Me sections */
+.h2:hover {
+ font-style: italic;
+ text-decoration: underline;
+}
+
 /* About Me */
 
 .about-me {
@@ -106,10 +111,25 @@ h2 {
   margin-top: -1cm;
 }
 
+.image-animation {
+  display: inline-block;
+  /* Animation during 2 secondes, in boucle */
+  animation: animations1 2s ease-in-out infinite;
+}
+
+@keyframes animations1 {
+  0%, 100% {
+      transform: translateX(0);
+  }
+  50% {
+      transform: translateY(50px); /* Move the icon horizontally by 50 pixels. */
+  }
+}
+
 .profile_image {
-  width: 500px;
+  width: 480px;
   height: fit-content;
-  height: 500px;
+  height: 490px;
   vertical-align: middle;
   margin: 5px;
 }
@@ -159,6 +179,37 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.skill img {
+  font-size: 24px;
+  /* Animation during 0.5 secondes, in boucle */
+  animation: animations2 0.5s ease-in-out infinite;
+}
+
+.skill p {
+  font-size: 24px;
+  /* Animation during 0.5 secondes, in boucle */
+  animation: animations2 0.5s ease-in-out infinite;
+}
+
+.smiley {
+  animation: animations2 0.5s ease-in-out infinite;
+}
+
+@keyframes animations2 {
+  0%, 100% {
+      transform: translateX(0);
+  }
+  25% {
+      transform: translateX(-5px);
+  }
+  50% {
+      transform: translateX(5px);
+  }
+  75% {
+      transform: translateX(-5px);
+  }
 }
 
 /* Projects */
@@ -328,3 +379,26 @@ button:hover {
   text-align: center;
   cursor: pointer;
 }
+
+/* Footer */
+
+ #foot {
+  background-color: rgba(139, 69, 19);
+  padding-bottom: 1cm;
+  padding-left: 1.5cm;
+  padding-top: 1.5cm;
+  padding-bottom: 2cm;
+  margin-right: -1cm;
+  margin-left: -1cm;
+  margin-bottom: -1.5cm;
+  line-height: 0cm;
+  margin-top:1cm;
+  height: 5mm;
+ }
+
+ .foot_adr {
+  font-size: 18px;
+  font-style: italic;
+  display: block;
+  color: #fff;
+ }

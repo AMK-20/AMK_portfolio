@@ -46,13 +46,13 @@
 
     <!-- About Me -->
     <section id="about-me" class="container">
-      <div>
+      <div class="image-animation">
         <img src="html_finalprojimages/amk.jpg" class="profile_image"/>
       </div>
 
       <div>
           <h1>
-            Hi, I'm Attou ! 👋 
+              Hi, I'm Attou ! <span class="smiley"> 👋 </span> 
           </h1>
           <p>
             As a front-end developer, I have gathered 4 months of experience, 
@@ -64,10 +64,19 @@
           </p>
       </div>
     </section>
+
+    <!-- About Me -->
+    <section>
+      <div>
+        <p>
+
+        </p>
+      </div>
+    </section>
               
     <!-- Skills -->
     <section id="skills">
-      <h2>
+      <h2 class="h2">
         Skills
       </h2>
       <div style="clear:both;"></div>
@@ -75,32 +84,56 @@
       <div class="all_skills">
         <div class="skill">
           <img src="html_finalprojimages/html5.png"/>
-          <h6>HTML</h6>
-          <p> 4 months experience</p>
+          <h6>HTML5</h6>
+          <p> Front-End </p>
         </div>  
 
         <div class="skill">
           <img src="html_finalprojimages/CSS3.png"/>
-          <h6>CSS</h6>
-          <p> 4 months experience</p>
+          <h6>CSS3</h6>
+          <p> Front-End </p>
         </div> 
         
         <div class="skill">
           <img src="html_finalprojimages/js.jpeg"/>
           <h6>JavaScript</h6>
-          <p> 4 months experience</p>
+          <p> Front-End </p>
         </div> 
 
         <div class="skill">
           <img src="html_finalprojimages/react.png"/>
           <h6>React JS</h6>
-          <p>1 month experience</p>
+          <p> Front-End </p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/node.png"/>
+          <h6>Node JS</h6>
+          <p> Back-End </p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/languagec.png"/>
+          <h6>C Language</h6>
+          <p> Programmation </p>
         </div>
 
         <div class="skill">
           <img src="html_finalprojimages/wordpress.png"/>
           <h6>WordPress</h6>
-          <p>1 month experience</p>
+          <p>  Content Management System </p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/github.png"/>
+          <h6>Github</h6>
+          <p> Tool </p>
+        </div>
+
+        <div class="skill">
+            <img src="html_finalprojimages/vscode.png"/>
+            <h6>Visual Studio</h6>
+            <p> Tool </p>
         </div>
 
       </div>
@@ -108,7 +141,7 @@
           
     <!-- Projects -->
     <section class="projects" id="projects">
-      <h2>
+      <h2 class="h2">
         Projects
       </h2>
       <div style="clear:both;"></div>
@@ -149,7 +182,7 @@
 
     <!-- Recommendations -->
     <section id="recommendations">
-      <h2>
+      <h2 class="h2">
         Recommendations
       </h2>
       <div style="clear:both;"></div>
@@ -205,9 +238,19 @@
     <div class="popup" id="popup" class="flex_center">
       <img src="html_finalprojimages/checkmark--outline.svg"/>
       <h3>
-        Thanks for leaving a recommendation!
+        Thanks for leaving a recommendation !
       </h3>
       <button onclick="showPopup(false)">Ok</button>
+    </div>
+
+    <div id="foot">
+      <footer class="foot_adr">
+          <address>
+            <p> Kénitra-Rabat-Salé 📍 </p>
+            <p> Maroc </p>
+          </address>
+          <p>&copy; 2024 AMK. Tous droits réservés. </p>
+      </footer>
     </div>
   </body>
 </html>
