@@ -102,15 +102,21 @@ h2 {
 
 #about-me h1 {
   font-size: 65px;
-  margin-top: 90px;
+  margin-left: 4cm;
+  margin-top: 5.5cm;
   color: rgb(55, 14, 7);
+}
+
+#about-me h2 {
+  margin-top: 3cm;
 }
 
 #about-me p {
   font-size: 25px;
   color: rgb(128, 128, 128);
-  margin-top: -1cm;
-  width: 80%;
+  margin-top: 1cm;
+  margin-left: 1.5cm;
+  width: 90%;
   animation-duration: 3s;
   animation-name: slidein;
 }
@@ -119,19 +125,13 @@ h2 {
 
 @keyframes slidein {
   from {
-    margin-left: 50%;
+    margin-left: 30%;
     width: 100%;
   }
 
   to {
     margin-left: 0%;
-    width: 80%;
-  }
-
-  90% {
-    font-size: 210%;
-    margin-left: 10%;
-    width: 180%;
+    width: 70%;
   }
 }
 
